@@ -44,7 +44,7 @@ function draw() {
 }
 
 function isTouching1(){
-if(wall1.x - car1.x < (car1.width + wall1.width/2)){
+if(wall1.x - car1.x < (car1.width + wall1.width)/2){
   car1.velocityX = 0;
 var deformation = 0.5 * weight1 * speed1 * speed1 / 22500;
 
@@ -66,7 +66,7 @@ if(deformation > 180){
 }
 
 function isTouching2(){
-  if(wall2.x - car2.x < (car2.width + wall2.width/2)){
+  if(wall2.x - car2.x < (car2.width + wall2.width)/2){
     car2.velocityX = 0;
   var deformation = 0.5 * weight2 * speed2 * speed2 / 22500;
   
